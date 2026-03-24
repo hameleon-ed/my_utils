@@ -45,7 +45,8 @@ Based on the
 │
 ├── setup.cfg          <- Configuration file for flake8
 │
-└── my_utils   <- Source code for use in this project.
+└── src
+    └── my_utils       <- Source code for use in this project.
     │
     ├── __init__.py             <- Makes my_utils a Python module
     │
@@ -60,7 +61,7 @@ Based on the
 
 --------
 
-## 🔁 4️⃣ How to reuse it in other projects
+## 🔁 How to reuse it in other projects
 ### Option A — Editable install (BEST for development)
 
 In your main project:
@@ -72,7 +73,7 @@ uv add --editable ../my_utils
 or:
 
 ```bash
-uv add --editable git+https://github.com/you/my_utils.git
+uv add --editable git+https://github.com/hameleon-ed/my_utils.git
 ```
 
 Then use:
@@ -84,7 +85,7 @@ from my_utils.plotting import boxplots
 ### Option B — Git dependency (clean, versioned)
 
 ```bash
-uv add git+https://github.com/you/my_utils.git
+uv add git+https://github.com/hameleon-ed/my_utils.git
 ```
 
 ### Option C — Local path (quick & dirty)
