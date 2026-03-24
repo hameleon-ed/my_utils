@@ -18,7 +18,7 @@ Based on the
 
 ```
 ├── LICENSE            <- Open-source license if one is chosen
-├── tasks.py           <- Invoke file with tasks
+├── tasks.py           <- Invoke file for task management
 ├── README.md          <- The top-level README for developers using this project.
 ├── data
 │   ├── external       <- Data from third party sources.
@@ -27,8 +27,6 @@ Based on the
 │   └── raw            <- The original, immutable data dump.
 │
 ├── docs               <- A default mkdocs project; see www.mkdocs.org for details
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
 │
 ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
 │                         the creator's initials, and a short `-` delimited description, e.g.
@@ -56,11 +54,6 @@ Based on the
     ├── dataset.py              <- Scripts to download or generate data
     │
     ├── features.py             <- Code to create features for modeling
-    │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
     │
     └── plots.py                <- Code to create visualizations
 ```
