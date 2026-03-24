@@ -47,3 +47,8 @@ extend-select = ["I"]  # Add import sorting
 known-first-party = ["my_utils"]
 force-sort-within-sections = true
 
+[dependency-groups]
+dev = [
+    "invoke>=2.2.1",
+]
+
