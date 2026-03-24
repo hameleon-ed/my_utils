@@ -1,10 +1,18 @@
 # my_utils
+#### Useful utilities across Python projects
 
+Key features:
+
+- Plots and charts
+- Statical analysis
+- Code plotting
+
+---
+
+Based on the 
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
-
-Usful utilities usefull across projects
 
 ## Project Organization
 
@@ -59,3 +67,35 @@ Usful utilities usefull across projects
 
 --------
 
+## 🔁 4️⃣ How to reuse it in other projects
+### Option A — Editable install (BEST for development)
+
+In your main project:
+
+```bash
+uv add --editable ../my_utils
+```
+
+or:
+
+```bash
+uv add --editable git+https://github.com/you/my_utils.git
+```
+
+Then use:
+
+```bash
+from my_utils.plotting import boxplots
+```
+
+### Option B — Git dependency (clean, versioned)
+
+```bash
+uv add git+https://github.com/you/my_utils.git
+```
+
+### Option C — Local path (quick & dirty)
+
+```bash
+uv add ../my_utils
+```
