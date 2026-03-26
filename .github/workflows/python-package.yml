@@ -33,8 +33,6 @@ jobs:
         run: |
           uv sync --locked --dev
           uv tree
-
-      - name: Run tests & coverage
+      - name: Run tests
         run: |
-          uv run coverage run -m pytest tests/
-          uv run coverage report -m
+          uv run pytest -v --cov=my_utils --cov-report=xml
