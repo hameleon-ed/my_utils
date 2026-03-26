@@ -41,8 +41,3 @@ def set_font_style(font_file = FONT_NAME, print_info=False):
     mpl.rcParams["figure.titlesize"] = configuration["figure.titlesize"]
 
     return prop
-
-
-if __name__ == "__main__":
-    prop = set_font()
-    print(prop.get_name())
