@@ -1,15 +1,12 @@
-from IPython.display import display, JSON
-import json
-import pandas as pd
 import matplotlib as mpl
 from matplotlib import font_manager
 from pathlib import Path
-from my_utils.paths import FONTS_DIR
 from my_utils.printing.printing import print_configuration
 
 FONT_NAME = "Inter_24pt-Regular.ttf"
+FONTS_DIR=Path(__file__).parent / "assets" / "fonts"
 
-def set_font(font_file = FONT_NAME, print_info=False):
+def set_font_style(font_file = FONT_NAME, print_info=False):
     '''Set the font for matplotlib plots.'''
     #print("Setting font...")
     font_path = FONTS_DIR / font_file
