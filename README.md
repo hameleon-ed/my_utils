@@ -64,16 +64,11 @@ Based on the
 ## 🔁 How to reuse it in other projects
 ### Option A — Editable install (BEST for development)
 
+Clone the my_utils repository to the root folder of a project (my_utils and a project should be in the same folder)
 In your main project:
 
 ```bash
 uv add --editable ../my_utils
-```
-
-or:
-
-```bash
-uv add --editable git+https://github.com/hameleon-ed/my_utils.git
 ```
 
 Then use:
@@ -88,8 +83,10 @@ from my_utils.plotting import boxplots
 uv add git+https://github.com/hameleon-ed/my_utils.git
 ```
 
-### Option C — Local path (quick & dirty)
+If you have pushed changes to `my_utils` on GitHub and want to pull them into your project, use the --update-package (or -P) flag:
 
 ```bash
-uv add ../my_utils
+uv lock --upgrade-package my-utils
+uv sync
 ```
+| Tip: uv lock file uses hyphens by convention, e.g., `my-utils`, even if your folder or Git repo is named `my_utils`
