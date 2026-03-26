@@ -35,4 +35,6 @@ jobs:
           uv tree
       - name: Run tests
         run: |
-          uv run pytest -v --cov=my_utils --cov-report=xml
+          uv run ruff check .
+          uv run ruff format --check .
+          uv run pytest -v --cov=src --cov-report=xml
