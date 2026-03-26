@@ -19,7 +19,6 @@ To upgrade all dependencies to their latest versions:
 uv lock --upgrade
 uv sync
 ```
-```
 
 ## Project Organization
 
