@@ -7,12 +7,19 @@ Key features:
 - Statical analysis
 - Code plotting
 
----
+## Install
 
-Based on the 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+Set up the environment:
+```bash
+uv sync
+```
+
+To upgrade all dependencies to their latest versions:
+```bash
+uv lock --upgrade
+uv sync
+```
+```
 
 ## Project Organization
 
@@ -90,3 +97,10 @@ uv lock --upgrade-package my-utils
 uv sync
 ```
 | Tip: uv lock file uses hyphens by convention, e.g., `my-utils`, even if your folder or Git repo is named `my_utils`
+
+---
+
+Based on the 
+<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
+    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
+</a>
