@@ -33,7 +33,7 @@ dependencies = [
     "tqdm",
     "typer",
 ]
-requires-python = "~=3.13.0"
+requires-python = ">=3.13"
 
 # read from git tags for project versioning
 [tool.hatch.version] 
